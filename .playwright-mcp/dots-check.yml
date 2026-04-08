@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Bizzzup AI Labs" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - list [ref=e6]
+      - link "Let's Talk" [ref=e21] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]
+      - generic [ref=e151]: Scroll
+    - generic [ref=e155]:
+      - generic [ref=e158]: Multi-Agent Systems
+      - generic [ref=e161]: CrewAI Workflows
+      - generic [ref=e164]: AI Chatbots & Assistants
+      - generic [ref=e167]: RAG Platforms
+      - generic [ref=e170]: ComfyUI Pipelines
+      - generic [ref=e173]: Voice AI
+      - generic [ref=e176]: Data Preprocessing AI
+      - generic [ref=e179]: AI Brand Creatives
+      - generic [ref=e182]: Multi-Agent Systems
+      - generic [ref=e185]: CrewAI Workflows
+      - generic [ref=e188]: AI Chatbots & Assistants
+      - generic [ref=e191]: RAG Platforms
+      - generic [ref=e194]: ComfyUI Pipelines
+      - generic [ref=e197]: Voice AI
+      - generic [ref=e200]: Data Preprocessing AI
+      - generic [ref=e203]: AI Brand Creatives
+    - generic [ref=e205]:
+      - generic [ref=e206]
+      - generic [ref=e210]
+    - generic [ref=e236]:
+      - generic [ref=e238]
+      - region "Solutions carousel" [ref=e244]
+      - generic [ref=e302]
+    - generic [ref=e314]:
+      - generic [ref=e316]
+      - generic [ref=e356]
+    - generic [ref=e387]:
+      - generic [ref=e388]
+      - generic [ref=e393]
+    - generic [ref=e461]:
+      - generic [ref=e462]
+      - generic [ref=e466]
+    - generic [ref=e505]:
+      - generic [ref=e506]
+      - generic [ref=e511]
+    - generic [ref=e543]:
+      - generic [ref=e545]: Get Started
+      - heading "Ready to build something remarkable?" [level=2] [ref=e546]
+      - paragraph [ref=e547]: Tell us about your project and we'll show you what AI can do for your team — no pitch deck required.
+      - link "Get in Touch" [ref=e549] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e551]:
+      - generic [ref=e552]
+      - generic [ref=e557]
+  - contentinfo [ref=e603]:
+    - generic [ref=e605]:
+      - generic [ref=e606]
+      - generic [ref=e625]
+      - generic [ref=e636]
+      - generic [ref=e643]
+    - generic [ref=e648]:
+      - generic [ref=e649]: © 2024 – 2026 Bizzzup AI Labs. All rights reserved.
+      - generic [ref=e650]: Chennai, India
+  - button "Open AI system assistant" [ref=e651] [cursor=pointer]:
+    - img [ref=e654]
+  - button "Open Next.js Dev Tools" [ref=e667] [cursor=pointer]:
+    - img [ref=e668]
+  - alert [ref=e889]

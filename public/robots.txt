@@ -1,0 +1,8 @@
+# Bizzzup AI Labs — robots.txt
+# https://bizzzup.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bizzzup.com/sitemap.xml

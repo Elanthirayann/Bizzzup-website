@@ -1,0 +1,500 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg-deep: #fafaf8;
+  --color-bg-surface: #f5f4f0;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f7f6f3;
+  --color-accent-1: #4f46e5;
+  --color-accent-2: #0d9488;
+  --color-accent-3: #7c3aed;
+  --color-accent-glow: rgba(79, 70, 229, 0.06);
+  --color-white: #ffffff;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #5c5c5c;
+  --color-text-muted: #9a9a9a;
+  --color-border: #e8e6e1;
+  --color-border-hover: #d4d1ca;
+  --color-border-accent: rgba(79, 70, 229, 0.15);
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --gradient-1: linear-gradient(
+    135deg,
+    var(--color-accent-1) 0%,
+    var(--color-accent-2) 100%
+  );
+  --gradient-2: linear-gradient(
+    135deg,
+    var(--color-bg-deep) 0%,
+    var(--color-bg-surface) 50%,
+    var(--color-bg-card-hover) 100%
+  );
+  --gradient-mesh:
+    radial-gradient(
+      ellipse at 20% 50%,
+      color-mix(in srgb, var(--color-accent-1) 3%, transparent) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      color-mix(in srgb, var(--color-accent-2) 2%, transparent) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 50% 80%,
+      color-mix(in srgb, var(--color-accent-3) 2%, transparent) 0%,
+      transparent 50%
+    );
+}
+
+/* One vertical scroll root: avoid overflow-x on html/body. A non-visible
+   overflow-x on the root forces overflow-y to `auto` on that same element;
+   combined with the viewport scroll that can show as two vertical bars in
+   Chromium / Edge. Clip X on an in-flow wrapper that grows with content
+   instead (see layout `.site-root`). */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-hover) var(--color-bg-surface);
+}
+
+.site-root {
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+@supports (overflow-x: clip) {
+  .site-root {
+    overflow-x: clip;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg-deep);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent-1) 12%, transparent);
+  color: var(--color-text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-hover);
+  border-radius: 3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-inline-end: 0.12em;
+  margin-inline-end: -0.12em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Clip path utility for signature cut corners */
+.clip-corner-sm {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 6px) 0,
+    100% 6px,
+    100% 100%,
+    6px 100%,
+    0 calc(100% - 6px)
+  );
+}
+.clip-corner-md {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+}
+.clip-corner-lg {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+}
+.clip-corner-xl {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 18px) 0,
+    100% 18px,
+    100% 100%,
+    18px 100%,
+    0 calc(100% - 18px)
+  );
+}
+.clip-corner-card {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 16px) 0,
+    100% 16px,
+    100% 100%,
+    16px 100%,
+    0 calc(100% - 16px)
+  );
+}
+.clip-corner-case {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0 calc(100% - 20px)
+  );
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-border),
+    transparent
+  );
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Nav link hover underline that grows from left */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent-1);
+  transition: width 0.3s var(--ease-out-expo);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Premium animation keyframes */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes float-gentle {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(15px, -20px) scale(1.02);
+  }
+  66% {
+    transform: translate(-10px, 10px) scale(0.98);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ─── chatbot animations ─── */
+@keyframes chat-status-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+}
+
+/* ─── chatbot shadows (use accent tokens, no hardcoded rgba) ─── */
+.chat-bubble-shadow {
+  box-shadow:
+    0 6px 24px color-mix(in srgb, var(--color-accent-1) 35%, transparent),
+    0 2px 10px color-mix(in srgb, var(--color-accent-1) 18%, transparent);
+}
+.chat-panel-shadow {
+  box-shadow:
+    0 24px 80px color-mix(in srgb, var(--color-accent-1) 8%, transparent),
+    0 8px 32px color-mix(in srgb, var(--color-text-primary) 6%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--color-accent-1) 4%, transparent);
+}
+
+/* Gradient text shimmer modifier */
+.gradient-text.shimmer {
+  background-size: 200% auto;
+  animation: gradient-shift 4s linear infinite;
+}
+
+/* Marquee animation */
+@keyframes marquee-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-wrapper {
+  position: relative;
+  isolation: isolate;
+}
+
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: min(28vw, 140px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--color-bg-surface) 0%,
+    color-mix(in srgb, var(--color-bg-surface) 85%, transparent) 45%,
+    transparent 100%
+  );
+}
+
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--color-bg-surface) 0%,
+    color-mix(in srgb, var(--color-bg-surface) 85%, transparent) 45%,
+    transparent 100%
+  );
+}
+
+/* Pause so people can read; feels more premium than racing text */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-wrapper.is-dragging .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-wrapper.is-grabbable {
+  cursor: grab;
+}
+
+.marquee-wrapper.is-dragging {
+  cursor: grabbing;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-duration: 200s !important;
+  }
+
+  .marquee-wrapper.is-grabbable {
+    cursor: default;
+  }
+}
+
+/* Marquee labels — depth read as premium (gradient ink, not flat gray) */
+.marquee-item {
+  position: relative;
+}
+
+.marquee-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.32rem, 3.15vw, 2.28rem);
+  line-height: 1.08;
+  letter-spacing: 0.035em;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--color-text-primary) 58%, var(--color-accent-1)) 0%,
+    var(--color-text-primary) 26%,
+    color-mix(in srgb, var(--color-text-primary) 78%, var(--color-accent-3)) 50%,
+    var(--color-text-primary) 70%,
+    color-mix(in srgb, var(--color-text-primary) 68%, var(--color-accent-2))
+      100%
+  );
+  background-size: 140% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding-inline-end: 0.08em;
+  margin-inline-end: -0.08em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    filter 0.45s var(--ease-out-expo),
+    background-position 0.6s var(--ease-out-expo);
+}
+
+.marquee-item:hover .marquee-label {
+  background-image: linear-gradient(
+    118deg,
+    var(--color-accent-1) 0%,
+    var(--color-accent-3) 38%,
+    var(--color-accent-2) 72%,
+    color-mix(in srgb, var(--color-accent-1) 85%, white) 100%
+  );
+  background-size: 160% 100%;
+  background-position: 12% 50%;
+  filter: drop-shadow(
+    0 2px 14px color-mix(in srgb, var(--color-accent-1) 22%, transparent)
+  );
+}
+
+.marquee-label-line {
+  transform-origin: center;
+  transition: transform 0.5s var(--ease-out-expo);
+}
+
+.marquee-item:hover .marquee-label-line {
+  transform: scaleX(1);
+}
+
+/* Feature row responsive grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .feature-grid--reversed > :first-child {
+    order: 2;
+  }
+  .feature-grid--reversed > :last-child {
+    order: 1;
+  }
+}
+
+/* Smooth section transitions */
+.section-transition-down {
+  position: relative;
+}
+.section-transition-down::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-deep),
+    var(--color-bg-surface)
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.section-transition-up {
+  position: relative;
+}
+.section-transition-up::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-surface),
+    var(--color-bg-deep)
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

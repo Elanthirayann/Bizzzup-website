@@ -1,0 +1,517 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Bizzzup AI Labs" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "Bizzzup AI Labs" [ref=e5]
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Solutions" [ref=e8] [cursor=pointer]:
+            - /url: "#solutions"
+        - listitem [ref=e9]:
+          - link "Showcase" [ref=e10] [cursor=pointer]:
+            - /url: "#showcase"
+        - listitem [ref=e11]:
+          - link "Projects" [ref=e12] [cursor=pointer]:
+            - /url: "#projects"
+        - listitem [ref=e13]:
+          - link "Team" [ref=e14] [cursor=pointer]:
+            - /url: "#team"
+        - listitem [ref=e15]:
+          - link "Blog" [ref=e16] [cursor=pointer]:
+            - /url: "#blog"
+        - listitem [ref=e17]:
+          - link "Contact" [ref=e18] [cursor=pointer]:
+            - /url: "#contact"
+      - link "Let's Talk" [ref=e21] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e31]: AI Systems Engineering
+          - heading "We Engineer Intelligence Into Systems That Run Work." [level=1] [ref=e32]:
+            - generic [ref=e33]: We
+            - generic [ref=e34]: Engineer
+            - generic [ref=e35]: Intelligence
+            - generic [ref=e36]: Into
+            - generic [ref=e37]: Systems
+            - generic [ref=e38]: That
+            - generic [ref=e39]: Run
+            - generic [ref=e40]: Work.
+          - paragraph [ref=e41]: Multi-agent architectures, workflow engines, and model-driven systems designed to execute, optimize, and scale real operations not just assist them.
+          - generic [ref=e42]:
+            - link "Build With Us" [ref=e43] [cursor=pointer]:
+              - /url: "#contact"
+              - text: Build With Us
+            - link "See Systems in Action" [ref=e44] [cursor=pointer]:
+              - /url: "#projects"
+              - text: See Systems in Action
+              - img [ref=e45]
+        - img [ref=e48]:
+          - generic [ref=e66]:
+            - generic [ref=e73]: Trigger
+            - generic [ref=e74]: Webhook / Schedule
+            - generic [ref=e78]: Active
+          - generic [ref=e79]:
+            - generic [ref=e86]: Enrich Data
+            - generic [ref=e87]: RAG + Context
+            - generic [ref=e91]: Active
+          - generic [ref=e92]:
+            - generic [ref=e99]: AI Analysis
+            - generic [ref=e100]: Multi-Model
+            - generic [ref=e104]: Active
+          - generic [ref=e105]:
+            - generic [ref=e112]: Decision
+            - generic [ref=e113]: Agent Router
+            - generic [ref=e117]: Active
+          - generic [ref=e118]:
+            - generic [ref=e125]: Execute
+            - generic [ref=e126]: API / Workflow
+            - generic [ref=e130]: Active
+          - generic [ref=e131]:
+            - generic [ref=e138]: Store
+            - generic [ref=e139]: Vector DB
+            - generic [ref=e143]: Active
+          - generic [ref=e147]: LIVE
+          - generic [ref=e149]: 6 steps · 3 agents
+      - generic [ref=e151]: Scroll
+    - generic [ref=e155]:
+      - generic [ref=e158]: Multi-Agent Systems
+      - generic [ref=e161]: CrewAI Workflows
+      - generic [ref=e164]: AI Chatbots & Assistants
+      - generic [ref=e167]: RAG Platforms
+      - generic [ref=e170]: ComfyUI Pipelines
+      - generic [ref=e173]: Voice AI
+      - generic [ref=e176]: Data Preprocessing AI
+      - generic [ref=e179]: AI Brand Creatives
+      - generic [ref=e182]: Multi-Agent Systems
+      - generic [ref=e185]: CrewAI Workflows
+      - generic [ref=e188]: AI Chatbots & Assistants
+      - generic [ref=e191]: RAG Platforms
+      - generic [ref=e194]: ComfyUI Pipelines
+      - generic [ref=e197]: Voice AI
+      - generic [ref=e200]: Data Preprocessing AI
+      - generic [ref=e203]: AI Brand Creatives
+    - generic [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e208]: Testimonials
+        - heading "Trusted by teams building the future" [level=2] [ref=e209]
+      - generic [ref=e210]:
+        - blockquote [ref=e211]:
+          - generic: “
+          - paragraph [ref=e212]: “Bizzzup cut our content production timeline from weeks to days. The AI-generated brand assets are indistinguishable from our in-house work.”
+          - generic [ref=e213]:
+            - generic [ref=e215]: P
+            - generic [ref=e216]:
+              - paragraph [ref=e217]: Priya Menon
+              - paragraph [ref=e218]: Head of Marketing, Nexora
+        - blockquote [ref=e219]:
+          - generic: “
+          - paragraph [ref=e220]: “Their RAG platform replaced three internal tools. Search accuracy jumped 40% and our support team handles twice the volume now.”
+          - generic [ref=e221]:
+            - generic [ref=e223]: D
+            - generic [ref=e224]:
+              - paragraph [ref=e225]: Daniel Okoro
+              - paragraph [ref=e226]: VP of Engineering, Tessera Health
+        - blockquote [ref=e227]:
+          - generic: “
+          - paragraph [ref=e228]: “The agentic lead-gen system books more qualified meetings than our SDR team did manually. ROI was clear within the first month.”
+          - generic [ref=e229]:
+            - generic [ref=e231]: S
+            - generic [ref=e232]:
+              - paragraph [ref=e233]: Sarah Lin
+              - paragraph [ref=e234]: Revenue Operations, Arcline
+    - generic [ref=e236]:
+      - generic [ref=e238]:
+        - generic [ref=e241]: Our Solutions
+        - heading "AI solutions that actually ship" [level=2] [ref=e242]:
+          - text: AI solutions that actually
+          - generic [ref=e243]: ship
+      - region "Solutions carousel" [ref=e244]:
+        - 'group "Slide 1 of 6: Design Assist" [ref=e245]':
+          - generic [ref=e246]:
+            - generic:
+              - img
+              - generic: "01"
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - generic [ref=e249]: Creative AI
+                - generic [ref=e250]: 01/06
+              - heading "Design Assist" [level=3] [ref=e251]
+              - paragraph [ref=e252]: AI-powered design intelligence
+              - paragraph [ref=e253]: Transform rough concepts into polished visuals. Our design system understands brand language, generates layout variations, and refines typography — all guided by your creative direction.
+              - generic [ref=e254]:
+                - generic [ref=e255]: Brand-aware generation
+                - generic [ref=e257]: Layout optimization
+                - generic [ref=e259]: Typography refinement
+                - generic [ref=e261]: Asset management
+        - group [ref=e263] [cursor=pointer]:
+          - generic [ref=e264]:
+            - generic:
+              - img
+              - generic: "02"
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - generic [ref=e267]: Content Engine
+                - generic [ref=e268]: 02/06
+              - heading [level=3] [ref=e269]: Storytelling AI
+              - paragraph [ref=e270]: Narratives that resonate and convert
+              - paragraph [ref=e271]: Craft compelling stories at scale. From brand narratives to product copy, our AI understands tone, audience, and context — producing content that feels human-written and drives engagement.
+              - generic [ref=e272]:
+                - generic [ref=e273]: Tone adaptation
+                - generic [ref=e275]: Multi-format output
+                - generic [ref=e277]: Audience targeting
+                - generic [ref=e279]: Brand voice learning
+        - group:
+          - generic:
+            - generic:
+              - img
+              - img
+              - generic: "03"
+            - generic:
+              - generic:
+                - generic: Sales Intelligence
+                - generic: 03/06
+              - heading [level=3]: Agentic Lead Gen
+              - paragraph: Autonomous prospecting that closes
+              - paragraph: Deploy AI agents that research, qualify, and engage prospects autonomously. They learn from every interaction, prioritize high-intent signals, and hand off warm leads to your sales team.
+              - generic:
+                - generic: Intent scoring
+                - generic: Auto-qualification
+                - generic: Multi-channel outreach
+                - generic: CRM integration
+        - group:
+          - generic:
+            - generic:
+              - img
+              - generic: "04"
+            - generic:
+              - generic:
+                - generic: Knowledge Systems
+                - generic: 04/06
+              - heading [level=3]: Smart RAG Platform
+              - paragraph: Your data, instantly queryable
+              - paragraph: Enterprise-grade retrieval-augmented generation that indexes your knowledge base, surfaces precise answers, and cites sources. Sub-40ms responses with 99.9% accuracy on domain-specific queries.
+              - generic:
+                - generic: Semantic search
+                - generic: Source citation
+                - generic: Real-time indexing
+                - generic: Access control
+        - group:
+          - generic:
+            - generic:
+              - img
+              - generic: "05"
+            - generic:
+              - generic:
+                - generic: Productivity AI
+                - generic: 05/06
+              - heading [level=3]: Voice Calendar
+              - paragraph: Schedule by speaking, not clicking
+              - paragraph: Natural voice interface for calendar management. Reschedule conflicts, set smart reminders, and coordinate across time zones — all through conversational AI that understands context.
+              - generic:
+                - generic: Natural language input
+                - generic: Conflict resolution
+                - generic: Smart reminders
+                - generic: Multi-timezone sync
+        - group:
+          - generic:
+            - generic:
+              - img
+              - generic:
+                - generic:
+                  - img
+              - generic: "06"
+            - generic:
+              - generic:
+                - generic: Legal Tech
+                - generic: 06/06
+              - heading [level=3]: Legal AI
+              - paragraph: Contract intelligence, automated
+              - paragraph: AI-powered contract review, clause extraction, and risk analysis. Reduce legal review time by 12x while catching critical issues human reviewers miss. Built for compliance-first organizations.
+              - generic:
+                - generic: Clause extraction
+                - generic: Risk scoring
+                - generic: Compliance checking
+                - generic: Redline automation
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - 'button "Go to slide 1: Design Assist" [ref=e286] [cursor=pointer]'
+          - 'button "Go to slide 2: Storytelling AI" [ref=e287] [cursor=pointer]'
+          - 'button "Go to slide 3: Agentic Lead Gen" [ref=e288] [cursor=pointer]'
+          - 'button "Go to slide 4: Smart RAG Platform" [ref=e289] [cursor=pointer]'
+          - 'button "Go to slide 5: Voice Calendar" [ref=e290] [cursor=pointer]'
+          - 'button "Go to slide 6: Legal AI" [ref=e291] [cursor=pointer]'
+        - generic [ref=e292]: 01/06
+    - generic [ref=e296]:
+      - generic [ref=e298]:
+        - img [ref=e300]
+        - img [ref=e302]:
+          - generic [ref=e332]: ORCHESTRATOR
+          - generic [ref=e333]: INGEST
+          - generic [ref=e334]: REASON
+          - generic [ref=e335]: STORE
+          - generic [ref=e336]: EXECUTE
+      - generic [ref=e338]:
+        - generic [ref=e341]: Showcase
+        - heading "Experiences that leave a mark" [level=2] [ref=e342]:
+          - text: Experiences that
+          - generic [ref=e343]:
+            - text: leave a
+            - generic [ref=e344]: mark
+        - paragraph [ref=e345]: We craft digital experiences that perform under pressure — sub-40ms responses, 99.9% uptime, and interfaces that feel alive. Every pixel, every prompt, every pipeline is built to ship and scale.
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - paragraph [ref=e348]:
+              - generic [ref=e349]: "0"
+              - generic [ref=e350]: +
+            - paragraph [ref=e351]: AI models deployed
+          - generic [ref=e352]:
+            - paragraph [ref=e353]:
+              - generic [ref=e354]: "0"
+              - generic [ref=e355]: ms
+            - paragraph [ref=e356]: Avg. response latency
+          - generic [ref=e357]:
+            - paragraph [ref=e358]:
+              - generic [ref=e359]: "0"
+              - generic [ref=e360]: "%"
+            - paragraph [ref=e361]: Uptime guarantee
+          - generic [ref=e362]:
+            - paragraph [ref=e363]:
+              - generic [ref=e364]: "0"
+              - generic [ref=e365]: x
+            - paragraph [ref=e366]: Faster than manual
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - generic [ref=e372]: Product Portfolio
+        - heading "Products we've built" [level=2] [ref=e373]
+        - paragraph [ref=e374]: From multi-agent systems to production-grade platforms we build AI products that actually run businesses.
+      - generic [ref=e375]:
+        - generic [ref=e378]:
+          - article [ref=e379] [cursor=pointer]:
+            - generic:
+              - generic:
+                - img "MERIDIAN — Storefront"
+              - generic [ref=e381]: Storefront
+            - generic [ref=e382]:
+              - generic:
+                - generic: E-Commerce
+                - heading "MERIDIAN" [level=3]
+                - paragraph: Global E-Commerce Platform
+                - paragraph: MERIDIAN is a global e-commerce affiliate and marketplace platform built for vendors to sell physical products or redirect buyers to external merchants. Launched in Saudi Arabia with a multi-country schema from day one — built as a monorepo with 8 workspace packages, 4 applications, 12 domain modules, and ~111 API endpoints.
+              - generic:
+                - generic:
+                  - generic [ref=e383]: NestJS
+                  - generic [ref=e384]: Next.js
+                  - generic [ref=e385]: PostgreSQL
+                  - generic [ref=e386]: OpenSearch
+                  - generic [ref=e387]: "+6"
+                - button "View Details" [ref=e388]
+          - article [ref=e389]:
+            - generic [ref=e391]: Mobile App
+            - generic [ref=e392]:
+              - generic [ref=e393]: VAPI
+              - generic [ref=e394]: Deepgram
+              - generic [ref=e395]: CrewAI
+              - generic [ref=e396]: Google Gemini
+              - generic [ref=e397]: "+6"
+          - article [ref=e398]:
+            - generic [ref=e400]: Staff Dashboard
+            - generic [ref=e401]:
+              - generic [ref=e402]: React 18
+              - generic [ref=e403]: Vite
+              - generic [ref=e404]: Ant Design
+              - generic [ref=e405]: Zustand
+              - generic [ref=e406]: "+5"
+          - article [ref=e407]:
+            - generic [ref=e409]: OCR & Translation
+            - generic [ref=e410]:
+              - generic [ref=e411]: React 19
+              - generic [ref=e412]: Vite
+              - generic [ref=e413]: Flask
+              - generic [ref=e414]: CrewAI
+              - generic [ref=e415]: "+6"
+          - article [ref=e416]:
+            - generic [ref=e418]: Speech-to-Text
+            - generic [ref=e419]:
+              - generic [ref=e420]: React 18
+              - generic [ref=e421]: TypeScript
+              - generic [ref=e422]: Vite
+              - generic [ref=e423]: Node.js
+              - generic [ref=e424]: "+7"
+          - article [ref=e425]:
+            - generic [ref=e427]: Design Studio
+            - generic [ref=e428]:
+              - generic [ref=e429]: Next.js 15
+              - generic [ref=e430]: App Router
+              - generic [ref=e431]: Tailwind CSS
+              - generic [ref=e432]: Zustand
+              - generic [ref=e433]: "+6"
+        - tablist "Project navigation" [ref=e434]:
+          - tab "Go to MERIDIAN" [selected] [ref=e435] [cursor=pointer]
+          - tab "Go to Doctor AI" [ref=e436] [cursor=pointer]
+          - tab "Go to Saloon" [ref=e437] [cursor=pointer]
+          - tab "Go to Lawyer AI" [ref=e438] [cursor=pointer]
+          - tab "Go to Caption CC" [ref=e439] [cursor=pointer]
+          - tab "Go to DesignT" [ref=e440] [cursor=pointer]
+    - generic [ref=e443]:
+      - generic [ref=e444]:
+        - generic [ref=e446]: The People
+        - heading "Built by builders" [level=2] [ref=e447]
+      - generic [ref=e448]:
+        - generic [ref=e449]:
+          - generic [ref=e454]: S
+          - heading "Suhail" [level=3] [ref=e455]
+          - generic [ref=e456]: Founder · Principal Design
+          - paragraph [ref=e457]: Orchestrates vision, design systems, and the creative direction behind every Bizzzup product.
+        - generic [ref=e458]:
+          - generic [ref=e463]: E
+          - heading "Edwin Swanith" [level=3] [ref=e464]
+          - generic [ref=e465]: Co-Founder · AI/ML Specialist
+          - paragraph [ref=e466]: Architects multi-agent systems and ML pipelines — from research prototypes to production scale.
+        - generic [ref=e467]:
+          - generic [ref=e472]: K
+          - heading "Kishore" [level=3] [ref=e473]
+          - generic [ref=e474]: AI Engineer
+          - paragraph [ref=e475]: Builds RAG platforms, fine-tuning workflows, and the inference infrastructure that powers our stack.
+        - generic [ref=e476]:
+          - generic [ref=e481]: V
+          - heading "Vikram" [level=3] [ref=e482]
+          - generic [ref=e483]: AI Engineer
+          - paragraph [ref=e484]: Develops voice interfaces, automation pipelines, and real-time AI integrations across the product suite.
+    - generic [ref=e487]:
+      - generic [ref=e488]:
+        - generic [ref=e490]: From the Lab
+        - heading "Thinking in public" [level=2] [ref=e491]
+        - paragraph [ref=e492]: Deep dives into the systems we build, the decisions we make, and the lessons we learn along the way.
+      - generic [ref=e493]:
+        - article [ref=e494] [cursor=pointer]:
+          - generic [ref=e495]:
+            - generic [ref=e497]: Nov 30, 2024
+            - generic [ref=e499]: 6 min read
+          - heading "Building a Fast Agent Platform with Google ADK + Notion MCP" [level=3] [ref=e500]
+          - paragraph [ref=e501]: How we architected a blazing-fast agent orchestration layer using Google's Agent Development Kit paired with Notion as a Model Context Protocol server for enterprise knowledge retrieval.
+          - generic [ref=e502]:
+            - text: Read more
+            - generic [ref=e503]: →
+        - article [ref=e504] [cursor=pointer]:
+          - generic [ref=e505]:
+            - generic [ref=e507]: May 8, 2024
+            - generic [ref=e509]: 5 min read
+          - heading "Introducing Our Smart RAG Platform for Every Department" [level=3] [ref=e510]
+          - paragraph [ref=e511]: A retrieval-augmented generation system designed to serve marketing, engineering, legal, and finance teams equally well — with department-aware context windows and guardrails.
+          - generic [ref=e512]:
+            - text: Read more
+            - generic [ref=e513]: →
+        - article [ref=e514] [cursor=pointer]:
+          - generic [ref=e515]:
+            - generic [ref=e517]: Sep 23, 2024
+            - generic [ref=e519]: 4 min read
+          - 'heading "Voice-Driven Calendar: Organize Your Life with Just Your Voice" [level=3] [ref=e520]'
+          - paragraph [ref=e521]: Our latest experiment turns natural speech into structured calendar events, recurring reminders, and smart scheduling suggestions powered by multimodal LLMs.
+          - generic [ref=e522]:
+            - text: Read more
+            - generic [ref=e523]: →
+    - generic [ref=e525]:
+      - generic [ref=e527]: Get Started
+      - heading "Ready to build something remarkable?" [level=2] [ref=e528]
+      - paragraph [ref=e529]: Tell us about your project and we'll show you what AI can do for your team — no pitch deck required.
+      - link "Get in Touch" [ref=e531] [cursor=pointer]:
+        - /url: "#contact"
+        - text: Get in Touch
+    - generic [ref=e533]:
+      - generic [ref=e534]:
+        - generic [ref=e536]: Get in Touch
+        - heading "Let's build something real" [level=2] [ref=e537]:
+          - text: Let's build
+          - generic [ref=e538]: something real
+      - generic [ref=e539]:
+        - generic [ref=e540]:
+          - generic [ref=e541]:
+            - img [ref=e543]
+            - generic [ref=e546]:
+              - generic [ref=e547]: Email
+              - link "hello@bizzzup.com" [ref=e548] [cursor=pointer]:
+                - /url: mailto:hello@bizzzup.com
+          - generic [ref=e549]:
+            - img [ref=e551]
+            - generic [ref=e553]:
+              - generic [ref=e554]: Phone
+              - link "+91 9003 020 030" [ref=e555] [cursor=pointer]:
+                - /url: tel:+919003020030
+          - generic [ref=e556]:
+            - img [ref=e558]
+            - generic [ref=e561]:
+              - generic [ref=e562]: Office
+              - text: 105, ECR Road, Panaiyur, Chennai 600119, Tamil Nadu, India
+          - generic [ref=e566]: Typically respond within 24 hours
+        - generic [ref=e567]:
+          - generic [ref=e568]:
+            - generic [ref=e569]: Name
+            - textbox "Name" [ref=e570]
+            - generic [ref=e571]: Email
+            - textbox "Email" [ref=e572]
+          - generic [ref=e573]:
+            - generic [ref=e574]: Subject
+            - textbox "Subject" [ref=e575]
+          - generic [ref=e576]:
+            - generic [ref=e577]: Message
+            - textbox "Message" [ref=e578]:
+              - /placeholder: Tell us about your project...
+          - button "Send Message" [ref=e580] [cursor=pointer]:
+            - img [ref=e581]
+            - generic [ref=e584]: Send Message
+  - contentinfo [ref=e585]:
+    - generic [ref=e587]:
+      - generic [ref=e588]:
+        - link "Bizzzup AI Labs" [ref=e589] [cursor=pointer]:
+          - /url: "#"
+          - text: Bizzzup AI Labs
+        - paragraph [ref=e593]: We engineer intelligence into systems that run work. Multi-agent architectures, from Chennai to the world.
+        - generic [ref=e594]:
+          - link "LinkedIn" [ref=e595] [cursor=pointer]:
+            - /url: https://linkedin.com/company/bizzzup
+            - img [ref=e596]
+          - link "X / Twitter" [ref=e600] [cursor=pointer]:
+            - /url: https://x.com/bizzzup
+            - img [ref=e601]
+          - link "GitHub" [ref=e604] [cursor=pointer]:
+            - /url: https://github.com/bizzzup
+            - img [ref=e605]
+      - generic [ref=e607]:
+        - heading "Navigation" [level=4] [ref=e608]
+        - list [ref=e609]:
+          - listitem [ref=e610]:
+            - link "Solutions" [ref=e611] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e612]:
+            - link "Showcase" [ref=e613] [cursor=pointer]:
+              - /url: "#showcase"
+          - listitem [ref=e614]:
+            - link "Projects" [ref=e615] [cursor=pointer]:
+              - /url: "#projects"
+          - listitem [ref=e616]:
+            - link "Team" [ref=e617] [cursor=pointer]:
+              - /url: "#team"
+      - generic [ref=e618]:
+        - heading "Company" [level=4] [ref=e619]
+        - list [ref=e620]:
+          - listitem [ref=e621]:
+            - link "Blog" [ref=e622] [cursor=pointer]:
+              - /url: "#blog"
+          - listitem [ref=e623]:
+            - link "Contact" [ref=e624] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e625]:
+        - heading "Let's Talk" [level=4] [ref=e626]
+        - paragraph [ref=e627]: Ready to build something remarkable?
+        - link "Start a Project" [ref=e628] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e630]:
+      - generic [ref=e631]: © 2024 – 2026 Bizzzup AI Labs. All rights reserved.
+      - generic [ref=e632]: Chennai, India
+  - button "Open AI system assistant" [ref=e633] [cursor=pointer]:
+    - img [ref=e636]
+  - button "Open Next.js Dev Tools" [ref=e649] [cursor=pointer]:
+    - img [ref=e650]
