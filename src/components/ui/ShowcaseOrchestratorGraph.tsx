@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { motion, useReducedMotion } from "framer-motion";
 import { EXPO_OUT } from "@/lib/animations";
+import { motion, useReducedMotion } from "framer-motion";
+import { useCallback, useState } from "react";
 
 type Accent = 1 | 2 | 3;
 
@@ -76,7 +76,14 @@ const NODES: GraphNode[] = [
   },
 ];
 
-const EDGE_LINES: { x1: number; y1: number; x2: number; y2: number; a: string; b: string }[] = [
+const EDGE_LINES: {
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  a: string;
+  b: string;
+}[] = [
   { x1: 150, y1: 120, x2: 300, y2: 200, a: "ingest", b: "orchestrator" },
   { x1: 300, y1: 200, x2: 450, y2: 150, a: "orchestrator", b: "reason" },
   { x1: 300, y1: 200, x2: 200, y2: 320, a: "orchestrator", b: "store" },
@@ -172,13 +179,16 @@ export default function ShowcaseOrchestratorGraph({
 
         {/* Primary edges: visible idle + soft glow when linked node is focused */}
         {EDGE_LINES.map((e, i) => {
-          const active =
-            !!focusId && (e.a === focusId || e.b === focusId);
+          const active = !!focusId && (e.a === focusId || e.b === focusId);
           const fn = focusId ? nodeById(focusId) : undefined;
-          const glowStroke = active && fn ? accentVar(fn.accent) : "transparent";
+          const glowStroke =
+            active && fn ? accentVar(fn.accent) : "transparent";
           const na = nodeById(e.a);
-          const idleStroke = na ? accentVar(na.accent) : "var(--color-text-secondary)";
-          const idleOpacity = 0.46;
+          const idleStroke = na
+            ? accentVar(na.accent)
+            : "var(--color-text-secondary)";
+          /* Slightly higher when any node is focused so non-highlighted edges stay legible */
+          const idleOpacity = focusId ? 0.58 : 0.48;
           const sharpStroke = active && fn ? accentVar(fn.accent) : idleStroke;
 
           return (
@@ -232,20 +242,17 @@ export default function ShowcaseOrchestratorGraph({
               animate={
                 inView
                   ? {
-                      opacity: dimOthers ? 0.38 : 1,
+                      /* Was 0.38: multiplied with label opacity and looked washed out */
+                      opacity: dimOthers ? 0.64 : 1,
                       scale: 1,
                     }
                   : { opacity: 0, scale: 0.88 }
               }
               transition={{ duration: 0.55, ease: EXPO_OUT }}
               whileHover={
-                hoverLift
-                  ? { scale: focused ? 1.08 : 1.06 }
-                  : undefined
+                hoverLift ? { scale: focused ? 1.08 : 1.06 } : undefined
               }
-              whileTap={
-                hoverLift ? { scale: 0.94 } : undefined
-              }
+              whileTap={hoverLift ? { scale: 0.94 } : undefined}
               onPointerEnter={() => setHoveredId(node.id)}
               onClick={(e) => {
                 e.stopPropagation();
@@ -257,14 +264,14 @@ export default function ShowcaseOrchestratorGraph({
                 cy={node.cy}
                 r={node.outerR}
                 fill={av}
-                opacity={focused ? 0.14 : 0.08}
+                opacity={focused ? 0.14 : dimOthers ? 0.1 : 0.08}
               />
               <circle
                 cx={node.cx}
                 cy={node.cy}
                 r={node.midR}
                 fill={av}
-                opacity={focused ? 0.18 : 0.12}
+                opacity={focused ? 0.18 : dimOthers ? 0.15 : 0.12}
               />
               {!reduced && focused && (
                 <circle
@@ -295,7 +302,7 @@ export default function ShowcaseOrchestratorGraph({
                 cy={node.cy}
                 r={node.coreR}
                 fill={av}
-                opacity={focused ? 0.85 : 0.55}
+                opacity={focused ? 0.85 : dimOthers ? 0.72 : 0.55}
               />
               <text
                 x={node.cx}
@@ -306,10 +313,8 @@ export default function ShowcaseOrchestratorGraph({
                   fontSize: node.id === "orchestrator" ? 11 : 10,
                   fontWeight: 800,
                   letterSpacing: "0.14em",
-                  fill: focused
-                    ? av
-                    : "var(--color-text-primary)",
-                  opacity: focused ? 1 : dimOthers ? 0.45 : 0.72,
+                  fill: focused ? av : "var(--color-text-primary)",
+                  opacity: focused ? 1 : dimOthers ? 0.92 : 0.72,
                   pointerEvents: "none",
                 }}
               >
